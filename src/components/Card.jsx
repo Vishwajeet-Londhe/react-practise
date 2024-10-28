@@ -5,6 +5,8 @@ function Card(){
     const data = [
         {name:"mahiya", description:"tere mathe zoomar chamke tere hatho chudiya baje"},
         {name:"junoon", description:"kaisa ye junoon hai khuda jane cahin ekk pal nahi sa"},
+        {name:"ram", description:"yo ri piya tu to nikla ram ram hai bhai tu hai satyayug"},
+        {name:"raabta", description:"khudane banaya tere jaie hi kisi ko mere liye hai "},
     ]
 
     const handleClickDownload = ()=>{alert("Download ho raha hai")}
