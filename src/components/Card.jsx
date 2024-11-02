@@ -106,7 +106,7 @@ function Card() {
       <h1>
         {val===false ? "BAHAAR jaao" : "MAAT jaao Na"}
       </h1>
-      <button onClick={()=>{setVal(!val)}} className='px-2 py-1 bg-blue-500 rounded-full'>Change krr be </button>
+      <button onClick={()=>setVal (()=>!val)} className='px-2 py-1 bg-blue-500 rounded-full'>Change krr be </button>
       
     </div>
   )
