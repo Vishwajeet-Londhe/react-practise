@@ -120,9 +120,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function Card() {
   return (
     <div className='w-full h-screen bg-zinc-300 flex justify-center items-center'>
-      <div className='w-80 h-60 bg-zinc-500 rounded-lg overflow-hidden'>
-        <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1729544091518-636c9849e22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-        <FaArrowRightLong/>
+      <div className='relative w-80 h-60 bg-zinc-500 rounded-lg overflow-hidden'>
+         <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1729706046487-d757c331564b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+         <span className='w-10 h-10 flex justify-center items-center rounded-full bg-[#dadada7b] bg-zinc-700 absolute bottom-10 left-1/2 -translate-x-[50%] -translate-y-[50%] '>
+          <FaArrowRightLong size={".8em"}/>
+         </span> 
+        
       </div>
       
     </div>
