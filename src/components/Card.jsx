@@ -114,16 +114,17 @@
 
 // export default Card
 
-import React from 'react'
+import React, { useState } from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Card() {
+  const [val,setVal] = useState(false)
   return (
     <div className='w-full h-screen bg-zinc-300 flex justify-center items-center'>
       <div className='relative w-80 h-60 bg-zinc-500 rounded-lg flex overflow-hidden'>
-         <img className='shrink-0 -translate-x-[0%] w-full h-full object-cover' src="https://images.unsplash.com/photo-1729706046487-d757c331564b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-         <img className='shrink-0 -translate-x-[0%] w-full h-full object-cover' src="https://plus.unsplash.com/premium_photo-1661963449031-c1ff2c8d2d99?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-         <span className='w-10 h-10 flex justify-center items-center rounded-full bg-[#dadada7b] bg-zinc-700 absolute bottom-10 left-1/2 -translate-x-[50%] -translate-y-[50%] '>
+         <img className={`shrink-0 ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1729706046487-d757c331564b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+         <img className={`shrink-0 ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1726236791758-791b49f66724?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+         <span onClick={()=>setVal(()=>!val)} className='w-10 h-10 flex justify-center items-center rounded-full bg-[#dadada7b] bg-zinc-700 absolute bottom-10 left-1/2 -translate-x-[50%] -translate-y-[50%] '>
           <FaArrowRightLong size={".8em"}/>
          </span> 
         
