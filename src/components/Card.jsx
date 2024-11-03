@@ -114,24 +114,39 @@
 
 // export default Card
 
-import React, { useState } from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+// img change
 
-function Card() {
-  const [val,setVal] = useState(false)
-  return (
-    <div className='w-full h-screen bg-zinc-300 flex justify-center items-center'>
-      <div className='relative w-96 h-60 bg-zinc-500 rounded-lg flex overflow-hidden'>
-         <img className={`shrink-0 transition-transform duration-700 ease-in-out ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1730484976453-c6657e01df5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-         <img className={`shrink-0 transition-transform duration-700 ease-in-out ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1720048171731-15b3d9d5473f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-         <span onClick={()=>setVal(()=>!val)} className='w-10 h-10 flex justify-center items-center rounded-full bg-[#dadada7b] bg-zinc-700 absolute bottom-10 left-1/2 -translate-x-[50%] -translate-y-[50%] '>
-          <FaArrowRightLong size={".8em"}/>
-         </span> 
+  // import React, { useState } from 'react'
+  // import { FaArrowRightLong } from "react-icons/fa6";
+
+  // function Card() {
+  //   const [val,setVal] = useState(false)
+  //   return (
+  //     <div className='w-full h-screen bg-zinc-300 flex justify-center items-center'>
+  //       <div className='relative w-96 h-60 bg-zinc-500 rounded-lg flex overflow-hidden'>
+  //         <img className={`shrink-0 transition-transform duration-700 ease-in-out ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1730484976453-c6657e01df5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+  //         <img className={`shrink-0 transition-transform duration-700 ease-in-out ${val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"} w-full h-full object-cover`} src="https://images.unsplash.com/photo-1720048171731-15b3d9d5473f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+  //         <span onClick={()=>setVal(()=>!val)} className='w-10 h-10 flex justify-center items-center rounded-full bg-[#dadada7b] bg-zinc-700 absolute bottom-10 left-1/2 -translate-x-[50%] -translate-y-[50%] '>
+  //           <FaArrowRightLong size={".8em"}/>
+  //         </span> 
+          
+  //       </div>
         
-      </div>
-      
-    </div>
-  )
-}
+  //     </div>
+  //   )
+  // }
 
-export default Card
+  // export default Card
+
+  import React from 'react'
+  
+  function Card({text}) {
+    return (
+      <div>
+        <button className='px-3 py-2 bg-blue-400 text-zinc-100 text-xs rounded-full m-2'>{text}</button>
+      </div>
+    )
+  }
+  
+  export default Card
+  
