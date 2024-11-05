@@ -140,10 +140,10 @@
 
   import React from 'react'
   
-  function Card({text}) {
+  function Card({text, color}) {
     return (
       <div>
-        <button className='px-3 py-2 bg-blue-400 text-zinc-100 text-xs rounded-full m-2'>{text}</button>
+        <button className={`px-3 py-2 ${color} text-zinc-100 text-xs rounded-full m-2`}>{text}</button>
       </div>
     )
   }
