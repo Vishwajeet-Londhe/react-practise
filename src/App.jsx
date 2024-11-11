@@ -9,6 +9,7 @@ function App() {
       <Card text="Watch" color="bg-orange-700"/>
       <Card text="About us" color="bg-green-700"/>
       <Card text="FeedBack" color="bg-yellow-700"/>
+      <Card text="Improv Us" color="bg-slate-700"/>
     </>
   );
 }
