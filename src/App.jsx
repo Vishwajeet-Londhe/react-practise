@@ -1,17 +1,32 @@
-import React from "react";
-import Card from "./components/Card";
+//101
+// import React from "react";
+// import Card from "./components/Card";
+
+// function App() {
+//   return (
+//     <>
+//       <Card text="Know More" color="bg-blue-600"/>
+//       <Card text="Download" color="bg-red-700"/>
+//       <Card text="Watch" color="bg-orange-700"/>
+//       <Card text="About us" color="bg-green-700"/>
+//       <Card text="FeedBack" color="bg-yellow-700"/>
+//       <Card text="Improv Us" color="bg-slate-700"/>
+//     </>
+//   );
+// }
+
+// export default App;
+
+// 102 prop drilling usage
+
+import React from 'react'
 
 function App() {
   return (
-    <>
-      <Card text="Know More" color="bg-blue-600"/>
-      <Card text="Download" color="bg-red-700"/>
-      <Card text="Watch" color="bg-orange-700"/>
-      <Card text="About us" color="bg-green-700"/>
-      <Card text="FeedBack" color="bg-yellow-700"/>
-      <Card text="Improv Us" color="bg-slate-700"/>
-    </>
-  );
+    <div>
+      
+    </div>
+  )
 }
 
-export default App;
+export default App

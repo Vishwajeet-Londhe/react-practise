@@ -138,12 +138,25 @@
 
   // export default Card
 
+// 101.passing data via props
+  // import React from 'react'
+  
+  // function Card({text, color}) {
+  //   return (
+  //     <div>
+  //       <button className={`px-3 py-2 ${color} text-zinc-100 text-xs rounded-full m-2`}>{text}</button>
+  //     </div>
+  //   )
+  // }
+  
+  // export default Card
+  
   import React from 'react'
   
-  function Card({text, color}) {
+  function Card() {
     return (
       <div>
-        <button className={`px-3 py-2 ${color} text-zinc-100 text-xs rounded-full m-2`}>{text}</button>
+        
       </div>
     )
   }
