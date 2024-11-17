@@ -153,9 +153,10 @@
   
   import React from 'react'
   
-  function Card() {
+  function Card({text, color}) {
     return (
-      <div>
+      <div className='w-60 bg-red-700 p-3'>
+
         
       </div>
     )
