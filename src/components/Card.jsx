@@ -155,7 +155,13 @@
   
   function Card({text, color}) {
     return (
-      <div className='w-60 bg-red-700 p-3'>
+      <div className='w-52 bg-white rounded-md overflow-hidden'>
+        <div className='w-full h-32 bg-sky-200'></div>
+        <div className='w-full p-3'>
+          <h3 className='text-xl font-semibold'>Vishwajeet</h3>
+          <h5 className='text-xs'>Profession</h5>
+          <button className='px-3 py-1 text-xs text-white bg-blue-500 font-semibold rounded-md'>Add Frined</button>
+        </div>
 
         
       </div>
