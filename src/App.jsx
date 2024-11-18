@@ -34,7 +34,9 @@ function App() {
   return (
     <>
     <div className="w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center">
-      <Card/>
+      {data.map((item,index)=>(
+        <Card/>
+      ))}
     </div>
     </>
   );
