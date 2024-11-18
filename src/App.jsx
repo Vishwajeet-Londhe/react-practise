@@ -25,7 +25,7 @@ import Card from "./components/Card";
 
 function App() {
   const data =[
-    {name:"Vishwajeet", profession:"Coder", image:"https://unsplash.com/photos/a-man-wearing-sunglasses-Aph5u9CDdYY"},
+    {name:"Vishwajeet", profession:"Coder", image:"https://images.unsplash.com/photo-1722322426803-101270837197?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {name:"Vaibhavi", profession:"jr.coder", image:"https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {name:"Himali", profession:"Topper", image:"https://images.unsplash.com/photo-1618780179533-870736eaea58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {name:"Ketaki", profession:"Student", image:"https://plus.unsplash.com/premium_photo-1668485967268-f757c5799b1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
@@ -35,7 +35,7 @@ function App() {
     <>
     <div className="w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center">
       {data.map((item,index)=>(
-        <Card/>
+        <Card image={item.image}/>
       ))}
     </div>
     </>
