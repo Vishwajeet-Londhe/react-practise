@@ -157,7 +157,7 @@
     return (
       <div className='w-52 bg-white rounded-md overflow-hidden'>
         <div className='w-full h-32 bg-sky-200'>
-          <img src={image} alt="" />
+          <img className='w-full h-full object-cover object-top' src={image} alt="" />
         </div>
         <div className='w-full p-3'>
           <h3 className='text-xl font-semibold'>Vishwajeet</h3>
