@@ -160,7 +160,7 @@
         <div className='w-full p-3'>
           <h3 className='text-xl font-semibold'>Vishwajeet</h3>
           <h5 className='text-xs'>Profession</h5>
-          <button className='px-3 py-1 text-xs text-white bg-blue-500 font-semibold rounded-md'>Add Frined</button>
+          <button className='mt-4 px-3 py-1 text-xs text-white bg-blue-500 font-semibold rounded-md'>Add Frined</button>
         </div>
 
         
