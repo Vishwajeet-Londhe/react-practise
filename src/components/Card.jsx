@@ -153,7 +153,8 @@
   
   import React from 'react'
   
-  function Card({image,name,profession}) {
+  function Card({values}) {
+    const {image, name, profession} = values;
     return (
       <div className='w-52 bg-white rounded-md overflow-hidden'>
         <div className='w-full h-32 bg-sky-200'>
