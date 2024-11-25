@@ -19,17 +19,20 @@
 
 // 102 prop drilling usage
 
-import React from "react";
+import React, { useState } from "react";
 import Card from "./components/Card";
 
 
 function App() {
   const data =[
-    {name:"Vishwajeet", profession:"Coder", image:"https://images.unsplash.com/photo-1722322426803-101270837197?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name:"Vaibhavi", profession:"jr.coder", image:"https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name:"Himali", profession:"Topper", image:"https://plus.unsplash.com/premium_photo-1723601001034-d334049404a5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name:"Ketaki", profession:"Student", image:"https://plus.unsplash.com/premium_photo-1726812042631-7c4e0b0351aa?q=80&w=2051&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+    {name:"Vishwajeet", profession:"Coder", image:"https://images.unsplash.com/photo-1722322426803-101270837197?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", friends:false},
+    {name:"Vaibhavi", profession:"jr.coder", image:"https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", friends:false},
+    {name:"Himali", profession:"Topper", image:"https://plus.unsplash.com/premium_photo-1723601001034-d334049404a5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", friends:false},
+    {name:"Ketaki", profession:"Student", image:"https://plus.unsplash.com/premium_photo-1726812042631-7c4e0b0351aa?q=80&w=2051&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", friends:false}
   ];
+
+  const [realdata, setRealData] = useState(data);
+  console.log(realdata)
 
   return (
     <>
