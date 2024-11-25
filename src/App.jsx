@@ -32,13 +32,13 @@ function App() {
   ];
 
   const [realdata, setRealData] = useState(data);
-  console.log(realdata)
+  const dummy = ()=>alert("adding as a besti")
 
   return (
     <>
     <div className="w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center">
       {realdata.map((item,index)=>(
-        <Card key={index} values = {item} />
+        <Card key={index} dummy={dummy} values = {item} />
       ))}
     </div>
     </>
