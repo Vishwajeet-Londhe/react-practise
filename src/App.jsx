@@ -33,10 +33,10 @@ function App() {
 
   const [realdata, setRealData] = useState(data);
   const handleFriendsButton = ()=>{
-    return setRealData ((previous)=> {
-      previous.map((item,indexl)=>{
+    setRealData ((previous)=> {
+      return previous.map((item,index)=>{
         if(index===2){
-          return {...item,friends:! item.friends}
+          return {...item,friends:!item.friends}
         }
         return item;
       })
