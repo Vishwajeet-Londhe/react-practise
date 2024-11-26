@@ -35,6 +35,9 @@ function App() {
   const handleFriendsButton = ()=>{
     return setRealData ((previous)=> {
       previous.map((item,indexl)=>{
+        if(index===2){
+          return {...item,friends:! item.friends}
+        }
         return item;
       })
     })
@@ -44,7 +47,7 @@ function App() {
     <>
     <div className="w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center">
       {realdata.map((item,index)=>(
-        <Card key={index} dummy={dummy} values = {item} />
+        <Card key={index} handleClick={handleFriendsButton} values = {item} />
       ))}
     </div>
     </>
