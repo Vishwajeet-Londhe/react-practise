@@ -32,7 +32,13 @@ function App() {
   ];
 
   const [realdata, setRealData] = useState(data);
-  const dummy = ()=>alert("adding as a besti")
+  const handleFriendsButton = ()=>{
+    return setRealData ((previous)=> {
+      previous.map((item,indexl)=>{
+        return item;
+      })
+    })
+  }
 
   return (
     <>
